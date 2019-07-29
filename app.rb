@@ -21,8 +21,9 @@ get "/goodbye/:name" do
 end
 
 get  "multiply/:num1/:num2" do
-         get '/multiply/num1/num2'
-    expect(last_response.body)to include("@product")
+         @num1 = paraams[:num1]
+         @num2 = params[:num2]
+         "#{@num1*@num2}"
 
   end
 end
