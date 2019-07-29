@@ -25,4 +25,4 @@ get  "multiply/:num1/:num2" do
     expect(last_response.body)to include("@product")
 
   end
-end 
+end
